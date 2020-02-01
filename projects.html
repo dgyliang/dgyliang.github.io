@@ -6,6 +6,8 @@
         <meta name="description" content = "David Liang's portfolio">
         <meta name="author" content="David Liang">
         <title>David Liang | projects</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
         <link rel = 'stylesheet' href="./css/style.css">
     </head>
     <body>
@@ -17,6 +19,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
                         <li><a href="experience.html">Experience</a></li>
                         <li class="current"><a href="projects.html">Projects</a></li>
                     </ul>
@@ -24,19 +27,58 @@
             </div>
         </header>
 
-        <section id="projects">
+        <section id="school_projects">
             <div class="container">
-                <h1>Projects:</h1>
-                <h2>Discord Bot</h2>
-                <p>
-                    <a href="https://github.com/dgyliang/discord-bot">github</a>
-                </p>
-                <h2>This web-portfolio</h2>
+                <h1>School Projects</h1>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Discord Bot</button>
+                <div class='accordion-content'>
+                    <p>
+                        A simple bot built for the popular messaging app Discord. I have actually built an personal updated version of this bot and use it in my own servers. You will be able to find more information
+                        on said bot under the "Hobby Projects" section below. 
+                    </p>
+                    <a href="https://github.com/dgyliang/discord-bot">Github</a>
+                    <br>
+                </div>
             </div>
         </section>
 
+        <section id="hobby_projects">
+            <div class="container">
+                <h1>Hobby Projects</h1>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>This Web Portfolio</button>
+                <div class='accordion-content'>
+                    <p>
+                        This web portfolio is made from scratch using HTML, CSS, and Java Script; the site is hosted on Github Pages. I am by no means an expert, and it took me just about a whole winter break to learn the basics of 
+                        everything that is needed to build this portfolio. That's right, before making this site, I had absolutely zero experience with HTML, CSS, or Java Script! In fact, I had only taken 
+                        introduction classes to python and C++. <br><br>
+                        <a href="https://github.com/dgyliang/dgyliang.github.io">Github</a>
+                    </p>
+                </div>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Bossu Bot</button>
+                <div class='accordion-content'>
+                    <p>
+                        Bossu bot is a bot made for a popular messaging app, Discord. The bot is built in discord.py, and is hosted on Heroku. It is based off of a simple discord bot that I built for my
+                        COGS 18 final project. This is mainly a fun little personal bot that I use for my personal use, as well as a fun little side hobby of mine as a way to learn how to code.
+                        I have learned many new concepts while working on Bossu bot, such as web-scraping and very specialized python libraries. Thus, this bot will constantly 
+                        receive new and experimental features. Some features include a built in chat bot that uses AIML based off of A.L.I.C.E Bot, and uses web-scraping to dynamically search for answers it 
+                        does not know how to answer. It also has other web-scraping commands to look up player stats for certain games... and much more! Try this bot out by inviting it to your own
+                        servers by clicking the invite link below( Warning: Since this is a highly personalized bot made for personal servers with close friends, the bot's language and demeanor can be
+                        offensive.)  <br><br>
+
+                        <a href="https://discordapp.com/api/oauth2/authorize?client_id=648064386270887936&permissions=0&scope=bot">Personal bot Invite</a>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <script src='./js/scripts.js'></script</script>
+
         <section id="contact">
-            <div class="contianer">
+            <div class="container">
                 <div id="contactinfo">
                     <h1>Contact info:</h1>
                 </div>

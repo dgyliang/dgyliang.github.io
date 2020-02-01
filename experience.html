@@ -6,101 +6,190 @@
         <meta name="description" content = "David Liang's portfolio">
         <meta name="author" content="David Liang">
         <title>David Liang | experience</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
         <link rel = 'stylesheet' href="./css/style.css">
     </head>
     <body>
         <header>
             <div class="container">
                 <div id="name">
-                    <h1>My Experience and Background</h1>
+                    <h1>My Experience</h1>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li class="current"><a href="experience.html">Experience</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="current"><a href="experience.html">Experience</a></liclass="current">
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <section id="experience">
+        <section id="education">
             <div class="container">
-                <h1>Education and Work Experience</h1>
-                <div id ="education">
-                        <h2>Education:</h2>
-                        <h3>University of California San diego</h3>
-                        <p>
-                        September 2019-Current
-                        Major in Psychology
-                        </p>
-                        <h3>City College of San Francisco</h3>
-                        <p>
-                        August 2017- May 2019
-                        Major in Psychology
-                        </p>
+                <h1>Education</h1>
+
+                <button class='accordion'> <i class="fas fa-caret-right"></i>University of California San diego</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> September 2019 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> Current <br><br>
+
+                        Psychology(B.S) Major
+                    </p>
                 </div>
-                <div id ="work">
-                        <h2>Work Experience:</h2>
-                        <h3>CCSF Work Study: Library Assistant, Art Gallery Assistant & Curator</h3>
-                        <p>
-                        Oct 2017- Jun 2018
-                        Work-study at CCSF's Rosenberg library and Art Gallery. Tasks include reshelving and refurbishing books,
-                        supervising the computer section, as well as maintenance of art works and planning opening events at the Art Gallery.
-                        </p>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>City College of San Francisco</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> August 2017 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> May 2019 <br><br>
+
+                    </p>
                 </div>
-            </div>
         </section>
 
-        <section id="courseandskills">
-                <div class="container">
-                    <h1>Course Work and Skills</h1>
-                    <div id ="course">
-                            <h2>Some Relevant Course Work:</h2>
-                            <h3>Psychology:</h3>
-                            <p>
-                            Biological Psychology, Developmental Psychology, Cognitive Psychology, Clinical Psychology
-                            </p>
-                            <h3>Other:</h3>
-                            <p>
-                            Statistics, Calculus, Chemistry, Biology, Sociology 
-                            </p>
-                    </div>
-                    <div id ="skills">
-                            <h2>Skills:</h2>
-                            <h3>Programing languages:</h3>
-                            <p>
-                            C++, python
-                            </p>
-                    </div>
-                </div>
-            </section>
+        <section id="work-experience">
+            <div class="container">
+                <h1>Work Experience</h1>
 
-        <section id="contact">
-            <div class="contianer">
-                <div id="contactinfo">
-                    <h1>Contact info:</h1>
+                <button class='accordion'><i class="fas fa-caret-right"></i>CCSF Work Study: Library Assistant, Art Gallery Assistant & Curator</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> October 2017 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> June 2018 <br><br>
+
+                        Work-study at City College of San Francisco's Rosenberg library and Art Gallery. Tasks include reshelving and refurbishing books, supervising the computer section, and maintenance of art works and planning opening events at the Art Gallery.
+                    </p>
                 </div>
-                <div class="box">
-                    <img src="./images/gmail.png">
-                    <h3>personal: dgyliang@gmail.com</h3>
-                    <h3>school: dliang@ucsd.edu</h3>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>UCSD School of Medicine Student Position</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> Janurary 2020 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> Current <br><br>
+
+                        Student position/ worker at the UCSD School of Medicine. Responsibilities include assisting in administrative paperwork, monitor student events, and assisting School of Medicine professors, deans and staff with miscellaneous work such as editing syllabus and troubleshooting computers.
+                    </p>
                 </div>
-                <div class="box">
-                        <img src="./images/linkedin.png">
-                        <nav>
-                            <li class="current"><a href="https://www.linkedin.com/in/david-liang-906b09194/">David Liang</a></li>  
-                        </nav>
+        </section>
+    
+        <section id="extracurriculars">
+            <div class="container">
+                <h1>Organizations & Extracurriculars</h1>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>CCDC Volunteer</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> Janurary 2014 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> Janurary 2017 <br><br>
+
+                        Volunteer at San Francisco's Chinatown Community Development Center. Participated in events to beautify San Francisco's Chinatown, lead community tours to spread the rich history of Chinatown, and gave speeches in San Francisco's City Hall in order to campaign for low-income housing, subsidies, and transportation.
+                    </p>
                 </div>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Boy Scouts of America</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Start:</b> </span> Janurary 2011 <br>
+                        <span style = 'color:darkslateblue;'><b>End:</b> </span> Janurary 2017 <br><br>
+
+                        Scout of The Boy Scouts of America, a large scouting organization that prepares America's youth through hands-on training and achievement. Climbed up the scout ranks in San Francisco's Troop 12 and Troop 1, eventually leading entire scout troops. Achieved the Eagle Scout rank in 2016.
+                    </p>
+                </div>
+        </section>
+
+        <section id="awards">
+            <div class="container">
+                <h1>Awards and Honors</h1>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Eagle Scout — Boy Scouts of America</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Date Achieved:</b></span> October 2016 <br><br>
+
+                        Highest and mose prestigious rank in Boy Scouts,  demonstrated exceptional leadership capabilities. Approximately only about 4% of all scouts have earned this rank.     
+                    </p>
+                </div>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Recognition of Legislature - CA state Assembly</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Date Achieved:</b></span> December 2015 <br><br>
+
+                        Recognition from State Assembly of my work in assisting and advancing the Chinese community in San Francisco.
+                    </p>
+                </div>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Provost Honors - UCSD</button>
+                <div class='accordion-content'>
+                    <p>
+                        <span style = 'color:darkslateblue;'><b>Date Achieved:</b> </span> Fall 2019 <br><br>
+
+                        Achieved by maintaining a 3.50 or higher GPA during UCSD's Fall quarter.
+                    </p>
+                </div>
+        </section>
+
+        <section id="courses">
+            <div class="container">
+                <h1>Relevant Courses Taken</h1>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Psychology</button>
+                <div class='accordion-content'>
+                    <br>
+                    <li>General Psychology</li>
+                    <li>Lower Division Research Methods</li>
+                    <li>Lower Division Developmental Psychology</li>
+                    <li>Lower Division Biological Psychology</li>
+                    <li>Upper Division Cognitive Psychology</li>
+                    <li>Upper Division Clinical Psychology</li>
+                    <li>Upper Division Neuropsychology</li>
+                    <li>Upper Division Engineering Psychology</li>
+                    <li>Upper Division Honors Research Methods</li>
+                </div>
+
+                <button class='accordion'><i class="fas fa-caret-right"></i>Programming & Related</button>
+                <div class='accordion-content'>
+                    <br>
+                    <li>Introduction to C++</li>
+                    <li>Introduction to Python</li>
+                    <li>Upper Division Data Science in Practice</li>
+
+                </div>
+
+        </section>
+
+        <script src='./js/scripts.js'></script</script>
+
+    </body>
+
+    <section id="contact">
+        <div class="container">
+            <div id="contactinfo">
+                <h1>Contact info:</h1>
+            </div>
             <div class="box">
-                    <img src="./images/github.png">
+                <img src="./images/gmail.png">
+                <h3>personal: dgyliang@gmail.com</h3>
+                <h3>school: dliang@ucsd.edu</h3>
+            </div>
+            <div class="box">
+                    <img src="./images/linkedin.png">
                     <nav>
-                        <li class="current"><a href="https://github.com/dgyliang/">dgyliang</a></li>  
+                        <li class="current"><a href="https://www.linkedin.com/in/david-liang-906b09194/">David Liang</a></li>  
                     </nav>
             </div>
-        </section>
-        
-    </body>
+        <div class="box">
+                <img src="./images/github.png">
+                <nav>
+                    <li class="current"><a href="https://github.com/dgyliang/">dgyliang</a></li>  
+                </nav>
+        </div>
+    </section>
+    
 </html>
 
 
