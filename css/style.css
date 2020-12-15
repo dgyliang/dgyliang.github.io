@@ -3,7 +3,10 @@ body{
     font-size:15px;
     line-height:1.5;
     padding:0;
-    background: url(../images/background.jpg) 0 -600px;
+    background-image: url(../images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -30,8 +33,8 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
     min-height:70px;
+    margin: 0;
     text-align: center;
-    border: thick solid #D9B48FFF;
 
 }
 
@@ -68,8 +71,8 @@ header li{
     margin-left: 3%;
     margin-right: 3%;
     min-height: 600px;
-    background-color: whitesmoke; 
-    border: thick solid white;
+    background-color: rgba(167, 164, 163, 0.3);
+    color: snow; 
 }
 
 
@@ -77,7 +80,8 @@ header li{
     margin-top: 50px;
     font-size: 50px;
     margin-bottom:5px;
-    color: midnightblue;
+    color: rgb(48, 48, 73);
+    text-shadow: white 0px 0px 10px;
 
 }
 
@@ -138,7 +142,7 @@ header li{
 /*About*/
 
 
-#about img{
+#story img{
 
     border: 2px solid teal;
     margin-left: auto;
@@ -148,21 +152,190 @@ header li{
 }
 
 
-#about{
-
-    margin-top: 3%;
-    background-color: tan ;
-    border: 2px solid teal;
+#story{
+    
+    float: center;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    position: relative;
+    text-shadow: white 0px 0px 5px;
     
 }
-#about p{
+
+#story::before{
+
+    content: '';
+    background-image: url(../images/story_background.png);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#story h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+    
+}
+#story p{
 
     color: white;
     font-size: 20px;
     
 }
 
+#anime{
 
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: white 0px 0px 5px;
+    
+}
+
+#anime::before{
+
+    content: '';
+    background-image: url(../images/anime_background.gif);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#anime h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#anime p{
+
+    color: white;
+    font-size: 20px;
+    
+}
+
+#cooking{
+
+    float: right;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: white 0px 0px 5px;
+    
+}
+
+#cooking::before{
+
+    content: '';
+    background-image: url(../images/cooking_background.gif);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+#cooking h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#cooking p{
+
+    color: white;
+    font-size: 20px;
+    
+}
+
+#gaming{
+    
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: white 0px 0px 5px;
+    
+}
+
+#gaming::before{
+
+    content: '';
+    background-image: url(../images/gaming_background.gif);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#gaming h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#gaming p{
+
+    color: white;
+    font-size: 20px;
+    
+}
 
 
 
@@ -191,7 +364,8 @@ button.accordion:hover {
     border-left: 1px solid whitesmoke;
     border-right: 1px solid whitesmoke;
     max-height: 0;
+    color: white;
     overflow: hidden;
-    background-color: whitesmoke;
+    background-color: rgba(139, 137, 134, 0.5);
     transition: max-height 0.2s ease-in-out;
 }
