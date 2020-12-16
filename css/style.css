@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
 
+
 html {
     scroll-behavior: smooth;
   }
@@ -29,7 +30,7 @@ body::-webkit-scrollbar {
 
     width: 83%;
     overflow: hidden;
-    margin-left: 320px;
+    margin-left: 17%;
 }
 
 .footer{
@@ -45,7 +46,7 @@ body::-webkit-scrollbar {
 
 .sidebar {
     position: fixed;
-    width: 300px;
+    width: 15%;
     height: 80%;
     background: #2a2e53;
     font-size: 0.65em;
@@ -124,7 +125,7 @@ body::-webkit-scrollbar {
 .header{
     text-align: center;
     padding-top: 1px;
-    margin-left: 300px;
+    margin-left: 15%;
     height: 700px;
     width: auto;
     background-image: url(../images/header.jpg);
@@ -150,13 +151,13 @@ body::-webkit-scrollbar {
     animation: 
       typing 5s steps(30, end),
       blink-caret .75s step-end infinite;
-      width:70%;
+      width: 900px;
       opacity: .85;
   } 
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 70% }
+    to { width: 900px }
   }
   
   @keyframes blink-caret {
