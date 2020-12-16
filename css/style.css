@@ -27,9 +27,9 @@ body::-webkit-scrollbar {
 
 .content{
 
-    width: 85%;
-    float: right;
+    width: 83%;
     overflow: hidden;
+    margin-left: 320px;
 }
 
 .footer{
@@ -126,6 +126,7 @@ body::-webkit-scrollbar {
     padding-top: 1px;
     margin-left: 300px;
     height: 700px;
+    width: auto;
     background-image: url(../images/header.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -148,14 +149,14 @@ body::-webkit-scrollbar {
     text-shadow: 4px 6px 6px #000000;
     animation: 
       typing 5s steps(30, end),
-      blink-caret .5s step-end infinite;
-      width:45%;
+      blink-caret .75s step-end infinite;
+      width:70%;
       opacity: .85;
   } 
 
   @keyframes typing {
     from { width: 0 }
-    to { width: 45% }
+    to { width: 70% }
   }
   
   @keyframes blink-caret {
