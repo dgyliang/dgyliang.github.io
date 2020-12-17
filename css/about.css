@@ -1,0 +1,209 @@
+/*About*/
+
+#story img{
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display:block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#story{
+    
+    float: center;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 10px;
+    position: relative;
+    text-shadow: white 0px 0px 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+
+#story h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+    
+}
+#story p{
+
+    color: white;
+    font-size: 20px;
+    
+}
+
+#anime{
+
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: white 0px 0px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#anime::before{
+
+    content: '';
+    background-image: url(../images/anime_background.gif);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+#anime h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#anime p{
+
+    color: white;
+    font-size: 20px;
+    
+}
+
+#cooking{
+
+    float: right;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-shadow: 4px 6px 6px #000000;
+    font-weight: bold;
+  
+}
+
+#cooking::before{
+
+    content: '';
+    background-image: url(../images/cooking_background.gif);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+
+#cooking h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#cooking p{
+
+    color:white;
+    font-size: 20px;
+    
+}
+
+#gaming{
+    
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 0%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    width: 45%;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: white 0px 0px 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+#gaming::before{
+
+    content: '';
+    background-image: url(../images/gaming_background.gif);
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain; 
+}
+
+#gaming h1{
+
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    
+}
+#gaming p{
+
+    color: white;
+    font-size: 20px;
+    
+}
+
+.linkwrap iframe{
+    height: 220px;
+    width: 330px;
+    border: hidden;
+    z-index: 2;
+}
+
+.linkwrap { 
+    position:relative;
+    display:inline-block;;
+}
+
+.blocker {
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:1;
+}
+
+.linkwrap iframe{ 
+    z-index: 2;
+}

@@ -5,13 +5,23 @@
         <meta name="viewpoint" content ="width=device_width">
         <meta name="description" content = "David Liang's portfolio">
         <meta name="author" content="David Liang">
-        <title>David Liang | home</title>
+        <title>David's Corner | home</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
         <link rel = 'stylesheet' href="./css/style.css">
+        <link rel = 'stylesheet' href="./css/home.css">
+        <link rel = 'stylesheet' href="./css/loader.css">
+        
     </head>
     <body>
-
+        
         <div class="sidebar">
             <nav class="nav">
                 <ul>
@@ -23,13 +33,24 @@
                 </nav>
 
                 <div class="contact">
-                    <a href="mailto:dliang@ucsd.edu"><i class="fas fa-envelope-square fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/david-liang-906b09194/"><i class="fab fa-linkedin fa-3x"></i></a>
-                    <a href="https://github.com/dgyliang/"><i class="fab fa-github fa-3x"></i></a>
+                    <a id = "email" href="mailto:dliang@ucsd.edu"><i class="fas fa-envelope-square fa-3x"></i></a>
+                    <a id = "linkedin" href="https://www.linkedin.com/in/david-liang-906b09194/"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a id = "github" href="https://github.com/dgyliang/"><i class="fab fa-github fa-3x"></i></a>
+                    <a id = "instagram" href="https://www.instagram.com/guamquat/"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
 
             </div>
+            <div class="loader">
+                <img src= "./images/load_home.gif">
+                <div class="meter">
+                    <span style="width: 100%"></span>
+                  </div>
+                  <h1>Loading</h1>
+                  <h2>Next stop, Home(sweet home) Page</h2>
+                  <p>.gif sauce: @walfieee</p>
+            </div>
 
+        <section class= "main">
         <div class = "header">
             <h1>David's Corner</h1>
             <h2>An amateur's hobby web-portfolio.</h2>
@@ -41,21 +62,17 @@
 
             <section id="home">
                 <div class="container">
-                    <h1><i>Welcome Traveler, you've done well to find this site.</i></h1>
-                    <img src="./images/wizard.png">
-                    <h2> Reward yourself to some pics of a good boy below</h2>
+                    <h1><i>Hey you, are you lost?</i></h1>
+                    <img src="./images/welcome.png">
                     <p>
                         I see you have stumbled upon this humble little online portfolio! You are probably either an employer who found this site through my resume, or a "friend"🤡 of mine who thinks it's comedy gold to use this 
                         to make fun of me and blackmail me for food. Either way, welcome!<br><br>
-                        If you are an employer, thank you for taking the time to check this portfolio out! This is a little side project of mine to learn web-design, and help people learn more about me. Through this portfolio,
+                        If you are an employer, thank you for taking the time to check this portfolio out! This is a little side project of mine to learn web-design, and help people learn more about me. On the navigation bar on the left,
                         you will be able to find all of my prior work experience, hobbies, and anything else that I may have been unable to fit onto a dinky little one-page resume. I don't have a background in computer science or design,
-                        and I learned most of what I know alone, so I hope this website isn't ugly enough to make your eyes burn off.
+                        and I learned most of what I know alone, so I hope this website isn't so ugly that it'll make your eyes burn off.
                         <br>
                         <br>
-                        You will be able to navigate through the portfolio with the naviation links on the left, and my contact information is located there as well.
-                        <br>
-                        <br>
-                        Again, thanks for coming!
+                        <h2> Also, please help yourself to some pics of a good boy below</h2>
                 </div>
                     <section id = "slideshow">
                     <div class = "container">
@@ -68,12 +85,14 @@
             </section>     
             
         </div>
-
         <div class="footer">
-            <p>Last updated 12/16/2020</p>
+            <p>Last updated 12/17/2020</p>
         </div>
 
-        <script src='./js/scripts.js'></script>
+    </section>
+    
+        <script src='./js/loader.js'></script>
+        <script src='./js/slideshow.js'></script>
     </body>
 </html>
 

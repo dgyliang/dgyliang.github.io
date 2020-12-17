@@ -5,10 +5,20 @@
         <meta name="viewpoint" content ="width=device_width">
         <meta name="description" content = "David Liang's portfolio">
         <meta name="author" content="David Liang">
-        <title>David Liang | about</title>
+        <title>David's Corner | about</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+        <link rel="manifest" href="icons/site.webmanifest">
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
         <link rel = 'stylesheet' href="./css/style.css">
+        <link rel = 'stylesheet' href="./css/about.css">
+        <link rel = 'stylesheet' href="./css/loader.css">
+        
     </head>
     <body>
 
@@ -23,17 +33,27 @@
                 </nav>
 
                 <div class="contact">
-                    <a href="mailto:dliang@ucsd.edu"><i class="fas fa-envelope-square fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/david-liang-906b09194/"><i class="fab fa-linkedin fa-3x"></i></a>
-                    <a href="https://github.com/dgyliang/"><i class="fab fa-github fa-3x"></i></a>
+                    <a id = "email" href="mailto:dliang@ucsd.edu"><i class="fas fa-envelope-square fa-3x"></i></a>
+                    <a id = "linkedin" href="https://www.linkedin.com/in/david-liang-906b09194/"><i class="fab fa-linkedin fa-3x"></i></a>
+                    <a id = "github" href="https://github.com/dgyliang/"><i class="fab fa-github fa-3x"></i></a>
+                    <a id = "instagram" href="https://www.instagram.com/guamquat/"><i class="fab fa-instagram fa-3x"></i></a>
                 </div>
-
             </div>
 
-        <div class = "content">         
-        <section id="story">
-                           
-                    <div class="container">
+            <div class="loader">
+                <img src= "./images/load_about.gif">
+                <div class="meter">
+                    <span style="width: 100%"></span>
+                  </div>
+                  <h1>Loading</h1>
+                  <h2>You really wanted to learn more about me that bad?</h2>
+                  <p>.gif sauce: @walfieee</p>
+            </div>
+        
+        <section class = "main">
+        <div class = "content">      
+        <section class="fade fadeOut" id="story">
+     
                         <div id= "story_text">
                             <h1>My Story</h1>
                             <img src="./images/about.gif">
@@ -51,12 +71,11 @@
                                     <br>
                             </p>
                         </div>
-        
-            </div>
+    
 
         </section>
 
-        <section id="anime">
+        <section class="fade fadeOut" id="anime">
                            
             <div class="container">
                 <div id= "anime_text">
@@ -75,7 +94,7 @@
         </div>
         </section>
 
-        <section id="cooking">
+        <section class="fade fadeOut" id="cooking">
                             
             <div class="container">
                 <div id= "cooking_text">
@@ -102,7 +121,7 @@
 
     </section>
 
-    <section id="gaming">
+    <section class="fade fadeOut" id="gaming">
                             
         <div class="container">
             <div id= "cooking_text">
@@ -118,18 +137,21 @@
                         <br>
                 </p>
             </div>
+            <div align="center">
             <p>Steam Profile:</p>
 
-            <div style="position:relative;">
-                <iframe src="https://gamer2810.github.io/steam-miniprofile/?accountId=103495171" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
-                <a href="https://steamcommunity.com/id/doodedoo/" style="position:absolute; top:0; left:0; display:inline-block; width:300px; height:200px; z-index:5;"></a>
-            </div>   
+                <a href="https://steamcommunity.com/id/doodedoo/" class="linkwrap">
+                    <div class="blocker"></div>
+                    <iframe  src="https://gamer2810.github.io/steam-miniprofile/?accountId=103495171" scrolling="no" allowfullscreen ></iframe>
+                </a> 
+                
+            </div>
         </div>
 
+        </section>
+        </div>
     </section>
-
-    </div>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src='./js/scripts.js'></script>
+        <script src='./js/loader.js'></script>
+        <script src="./js/fade.js"></script>
     </body>
 </html>
