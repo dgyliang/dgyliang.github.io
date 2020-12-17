@@ -140,22 +140,18 @@ to{ bottom:0; opacity:1 }
 
 #slideshow{
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 30%;
-    max-height: 30%;
-    
+    text-align:center;
+    overflow:auto;
+    width: 65%;
+    height: 100%;
 }
 
 #slideshow img{
 
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 8px;
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 50%;
+    max-height: 50%;
     width: auto;
     height: auto;
+    border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
