@@ -12,13 +12,10 @@
 
 #story{
     
-    float: center;
-    margin-top: 4%;
-    margin-bottom: 0%;
+    margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
     padding: 10px;
-    position: relative;
     text-shadow: white 0px 0px 5px;
     background-color: rgba(0, 0, 0, 0.8);
     
@@ -43,7 +40,6 @@
 
     float: left;
     margin-top: 4%;
-    margin-bottom: 0%;
     margin-left: 2%;
     margin-right: 2%;
     box-sizing: border-box;
@@ -91,7 +87,6 @@
 
     float: right;
     margin-top: 4%;
-    margin-bottom: 0%;
     margin-left: 2%;
     margin-right: 2%;
     box-sizing: border-box;
@@ -141,7 +136,6 @@
     
     float: left;
     margin-top: 4%;
-    margin-bottom: 0%;
     margin-left: 2%;
     margin-right: 2%;
     box-sizing: border-box;
