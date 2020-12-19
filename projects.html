@@ -13,10 +13,10 @@
         <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
+        <link rel = 'stylesheet' href="./css/bootstrap-carousel.css">
         <link rel = 'stylesheet' href="./css/style.css">
         <link rel = 'stylesheet' href="./css/experience_and_projects.css">
+        <link rel = 'stylesheet' href="./css/carousel.css">
         <link rel = 'stylesheet' href="./css/loader.css">
     </head>
     <body>
@@ -69,12 +69,103 @@
                 <div class='accordion-content'>
                     <p>
                         Final Project for UCSD's COGS 108 course, an upper division practical data science course. <br><br>
-                        This project uses python statistical libraries to perform statistical analysis to examine several potential mediating factors in predicting obesity rates in U.S states, including family income, fastfood restaurant accessibility,
+                        This project uses python statistical libraries such as Matplotlib, Seaborn, Pandas, etc to perform analysis on several potential mediating factors in predicting obesity rates in U.S states, including family income, fastfood restaurant accessibility,
                         and education level. Regression models were used to analyze relationships of these factors, and geospatial maps were created for visualization of data. <br>
                         We found that household income has the strongest correlation to obesity rate per capita, however the study itself is heavily flawed, in part due to our limitation of access to updated census data, as well
                         as the nature of the study being strictly correlational, with no account for possible extraneous factors. <br><br>
-                        The Github repository is unfortunately private, to protect the confidentiality of my project partners.
+                        The Github repository is unfortunately private, due to their wishes to remain anonymous.
                     </p>
+                    <section id="slideshows">
+                        <section id="maps" class ="carousel slide" data-ride = "carousel">
+                            <h1>Geospatial maps</h1>
+                            <ol class="carousel-indicators">
+                                <li data-target="#maps" data-slide-to="0" class="active"></li>
+                                <li data-target="#maps" data-slide-to="1"></li>
+                                <li data-target="#maps" data-slide-to="2"></li>
+                                <li data-target="#maps" data-slide-to="3"></li>
+                              </ol>
+
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="./images/project_graphs/income.png">
+                                    <div class="carousel-caption">
+                                        <h3>Median income per state in the US</h3>
+                                        <p>Typo in the geospatial map title.</p>
+                                    </div>
+                                </div>
+                          
+                                <div class="item">
+                                  <img src="./images/project_graphs/obesity.png">
+                                  <div class="carousel-caption">
+                                    <h3>Obesity rate per state in the US</h3>
+                                </div>
+                                </div>
+                              
+                                <div class="item">
+                                  <img src="./images/project_graphs/fastfood.png">
+                                  <div class="carousel-caption">
+                                    <h3>Fastfood restaurants per capita per state in the US</h3>
+                                </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./images/project_graphs/graduation_rate.png">
+                                    <div class="carousel-caption">
+                                        <h3>College graduation rate per state in the US</h3>
+                                    </div>
+                                  </div>
+                              </div>
+
+                            <a class="left carousel-control" href="#maps" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#maps" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </section>
+                        <section id="plots" class ="carousel slide" data-ride = "carousel">
+
+                            <h1>Regression Plots</h1>
+                            <ol class="carousel-indicators">
+                                <li data-target="#plots" data-slide-to="0" class="active"></li>
+                                <li data-target="#plots" data-slide-to="1"></li>
+                                <li data-target="#plots" data-slide-to="2"></li>
+                              </ol>
+
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <img src="./images/project_graphs/incomeobesity.png">
+                                  <div class="carousel-caption">
+                                    <h3>Income vs. Obesity</h3>
+                                </div>
+                                </div>
+                          
+                                <div class="item">
+                                  <img src="./images/project_graphs/fastfoodobesity.png">
+                                  <div class="carousel-caption">
+                                    <h3>Fastfood per capita vs. Obesity</h3>
+                                </div>
+                                </div>
+                              
+                                <div class="item">
+                                  <img src="./images/project_graphs/gradobesity.png">
+                                  <div class="carousel-caption">
+                                    <h3>Graduation rate vs. Obesity</h3>
+                                </div>
+                                </div>
+                              </div>
+
+                            <a class="left carousel-control" href="#plots" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#plots" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </section>
+                    </section>
                 </div>
             </div>
         </section>
@@ -131,8 +222,11 @@
      
         </div>
         </section>
+        <script src="https://kit.fontawesome.com/624f8bd1c0.js" crossorigin="anonymous"></script>
         <script src='./js/loader.js'></script>
         <script src='./js/accordion.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
     </body>
 </html>
 

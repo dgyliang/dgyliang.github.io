@@ -1,7 +1,7 @@
 const observerOptions = {
     root: null, // Null = based on viewport
     rootMargin: "0px", // Margin for root if desired
-    threshold: 0.35 // Percentage of visibility needed to execute function
+    threshold: 0.4 // Percentage of visibility needed to execute function
   };
   
   function observerCallback(entries, observer) {

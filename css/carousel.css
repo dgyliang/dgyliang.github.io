@@ -1,0 +1,37 @@
+#maps{
+    float:left;
+    max-width: 60%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
+    margin-bottom: 2%;
+    margin-right: 2%;
+}
+
+#maps h1{
+    text-align: center;
+}
+
+#maps img{
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#plots{
+    float:right;
+    max-width: 70%;
+    max-height: 50%;
+    width: auto;
+    height: auto;
+}
+
+#plots h1{
+    text-align: center;
+}
+
+#plots img{
+
+    text-align: center;
+}
